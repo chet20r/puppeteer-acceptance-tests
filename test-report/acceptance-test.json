@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-05-19T13:39:06.848Z",
+    "end": "2018-05-19T13:39:13.072Z",
+    "duration": 6224,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "23a0da2b-3c2c-46c0-8e11-b6951d8a0fbe",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [
+      {
+        "title": "\"before all\" hook",
+        "fullTitle": "\"before all\" hook",
+        "timedOut": false,
+        "duration": 252,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "global.expect = expect;\nglobal.browser = await puppeteer.launch(opts);",
+        "err": {},
+        "isRoot": true,
+        "uuid": "c2b4fc6a-4a9f-4609-a276-c80ac8ac14e4",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "afterHooks": [
+      {
+        "title": "\"after all\" hook",
+        "fullTitle": "\"after all\" hook",
+        "timedOut": false,
+        "duration": 18,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "await browser.close();\n//reset global variables\nglobal.browser = globalVars.browser;\nglobal.expect = globalVars.expect;",
+        "err": {},
+        "isRoot": true,
+        "uuid": "0a46de01-1bfc-4cd7-9d1d-f91294d2e350",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "5c1d79f7-4c7e-441a-81b5-9b2f2328174c",
+        "title": "I visit the Home Page",
+        "fullFile": "/home/chetan/projects/js/acceptance-tests/test/home-page.js",
+        "file": "/test/home-page.js",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "I visit the Home Page \"before each\" hook",
+            "timedOut": false,
+            "duration": 658,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "page = await browser.newPage()",
+            "err": {},
+            "isRoot": false,
+            "uuid": "729147d7-529f-4b56-b93a-e6ec49e0306b",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "I visit the Home Page \"after each\" hook",
+            "timedOut": false,
+            "duration": 112,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "await page.close();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "086d8a50-793e-41a7-9538-3ca3591ae1fe",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "I should see the home page",
+            "fullTitle": "I visit the Home Page I should see the home page",
+            "timedOut": false,
+            "duration": 5161,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "context": "\"/home/chetan/projects/js/acceptance-tests/screenshots/home_page.png\"",
+            "code": "await page.goto('http://www.kmart.com.au');\nawait page.screenshot({path: `${config.screenshotPath}/home_page.png`});\naddContext(this, `${config.screenshotPath}/home_page.png`);\nconsole.log(await page.title());",
+            "err": {},
+            "isRoot": false,
+            "uuid": "b0b05a52-5390-48fe-bf64-09aa417c9300",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "b0b05a52-5390-48fe-bf64-09aa417c9300"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 5161,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 10000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 10000
+  },
+  "copyrightYear": 2018
+}

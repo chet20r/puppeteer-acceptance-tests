@@ -1,0 +1,28 @@
+{
+  "name": "acceptance-tests",
+  "version": "1.0.0",
+  "description": "acceptance tests for ui using puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter text --reporter mochawesome --reporter-options reportDir=test-report,reportFilename=acceptance-test test/init.js --recursive test"
+  },
+  "keywords": [
+    "acceptance",
+    "tests",
+    "ui",
+    "puppeteer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "app-root-path": "^2.0.1",
+    "chai": "^4.1.2",
+    "loadash": "^1.0.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.2"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "puppeteer": "^1.4.0"
+  }
+}
